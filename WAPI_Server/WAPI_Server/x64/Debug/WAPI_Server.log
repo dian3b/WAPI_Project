@@ -1,0 +1,43 @@
+﻿  certificate.cpp
+  encryption.cpp
+C:\Users\31191\source\repos\WAPI_Server\WAPI_Server\certificate.cpp(6,22): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  keyexchange.cpp
+C:\Users\31191\source\repos\WAPI_Server\WAPI_Server\keyexchange.cpp(6,11): error C4996: 'DH_new': Since OpenSSL 3.0
+C:\Users\31191\source\repos\WAPI_Server\WAPI_Server\keyexchange.cpp(13,9): error C4996: 'DH_generate_parameters_ex': Since OpenSSL 3.0
+C:\Users\31191\source\repos\WAPI_Server\WAPI_Server\keyexchange.cpp(14,21): error C4996: 'DH_get0_p': Since OpenSSL 3.0
+C:\Users\31191\source\repos\WAPI_Server\WAPI_Server\keyexchange.cpp(15,21): error C4996: 'DH_get0_g': Since OpenSSL 3.0
+C:\Users\31191\source\repos\WAPI_Server\WAPI_Server\keyexchange.cpp(19,9): error C4996: 'DH_free': Since OpenSSL 3.0
+C:\Users\31191\source\repos\WAPI_Server\WAPI_Server\keyexchange.cpp(26,24): error C2660: “DH_compute_key”: 函数不接受 4 个参数
+      C:\Program Files\OpenSSL-Win64\include\openssl\dh.h(235,27):
+      参见“DH_compute_key”的声明
+      C:\Users\31191\source\repos\WAPI_Server\WAPI_Server\keyexchange.cpp(26,24):
+      尝试匹配参数列表“(unsigned char *, const BIGNUM *, const DH *, const BIGNUM *)”时
+  
+C:\Users\31191\source\repos\WAPI_Server\WAPI_Server\keyexchange.cpp(25,44): error C4996: 'DH_size': Since OpenSSL 3.0
+  main.cpp
+C:\Users\31191\source\repos\WAPI_Server\WAPI_Server\main.cpp(23,23): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\31191\source\repos\WAPI_Server\WAPI_Server\main.cpp(25,5): error C3861: “generateKey”: 找不到标识符
+C:\Users\31191\source\repos\WAPI_Server\WAPI_Server\main.cpp(41,32): error C2027: 使用了未定义类型“dh_st”
+      C:\Program Files\OpenSSL-Win64\include\openssl\types.h(143,16):
+      参见“dh_st”的声明
+  
+C:\Users\31191\source\repos\WAPI_Server\WAPI_Server\main.cpp(41,5): error C2660: “BN_rand_range”: 函数不接受 1 个参数
+      C:\Program Files\OpenSSL-Win64\include\openssl\bn.h(225,5):
+      参见“BN_rand_range”的声明
+      C:\Users\31191\source\repos\WAPI_Server\WAPI_Server\main.cpp(41,5):
+      尝试匹配参数列表“(BIGNUM *)”时
+  
+C:\Users\31191\source\repos\WAPI_Server\WAPI_Server\main.cpp(44,31): error C2027: 使用了未定义类型“dh_st”
+      C:\Program Files\OpenSSL-Win64\include\openssl\types.h(143,16):
+      参见“dh_st”的声明
+  
+C:\Users\31191\source\repos\WAPI_Server\WAPI_Server\main.cpp(44,5): error C2660: “calculateSharedSecret”: 函数不接受 4 个参数
+      C:\Users\31191\source\repos\WAPI_Server\WAPI_Server\keyexchange.h(10,6):
+      参见“calculateSharedSecret”的声明
+      C:\Users\31191\source\repos\WAPI_Server\WAPI_Server\main.cpp(44,5):
+      尝试匹配参数列表“(DH *, BIGNUM *, unsigned char **, int *)”时
+  
+C:\Users\31191\source\repos\WAPI_Server\WAPI_Server\main.cpp(54,5): error C4996: 'DH_free': Since OpenSSL 3.0
+  WAPI_Server.cpp
+C:\Users\31191\source\repos\WAPI_Server\WAPI_Server\WAPI_Server.cpp(6,22): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  正在生成代码...
